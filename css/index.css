@@ -1,0 +1,472 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+html, body{
+	height: 100%;
+	overflow-x: hidden;
+	transition:all 0.5s;
+}
+
+#site{
+	margin: 0 auto;
+	position: relative;
+	width: 900px;
+	height: 100%;
+	height: auto !important;
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+h1{
+	font-size: 23px;
+	border-bottom: 1px dotted;
+
+}
+
+header{
+	position: fixed;
+	z-index: 10;
+	box-shadow:0px 3px 10px #a9a9a9;
+	margin: 0 -100%;
+	margin-top: -50px;
+	padding: 30px 100%; 
+	background-color: #fff;
+	width:900px;
+	height:40px;
+
+	-moz-opacity: 0.95;
+	opacity: 0.95;
+	filter:alpha(opacity=95);
+}
+
+header #top{
+	display: block;
+	float: left;
+	width:300px;
+	height:40px;
+	font-size: 30px;
+}
+
+header #top a{
+	display: block;
+
+	width:300px;
+	height:40px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+nav{
+	float:right;
+	height: 40px;
+}
+
+nav a{
+	display: table-cell;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+nav ul li{
+	display: block;
+	float:left;
+	vertical-align:bottom;
+	margin: 0px 20px;
+	width:60px;
+	line-height: 60px;
+}
+
+footer{
+	background-color: #FFF;   /* 背景色(黒) */
+	margin-top: 30px;
+	width: 900px;
+	height:50px;
+	bottom:0;
+}
+
+footer p{
+	text-align: center;
+	font-size: 10px;
+}
+
+#main{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding-top: 70px;
+	padding-bottom: 100px;
+	width: 900px;
+	height:auto;
+}
+
+#main h1:nth-child(n+1){
+	margin-top: 50px;
+}
+
+#main ul{
+	clear: both;
+	width: 100%;
+	margin-top: 5px;
+}
+
+#main ul li{
+	list-style:none;
+}
+
+.contents{
+	float: left;
+	position: relative;
+	margin: 10px 15px 10px 0px;
+	height: 160px;
+	width: 435px;
+	background-color: #FFF;
+}
+
+.contents .bd{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+}
+
+.contents .bdT{
+	position: absolute;
+	width: 0%;
+	height:2px;
+	top:0;
+	left:0;
+	background: #000;
+
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.contents .bdB{
+	position: absolute;
+	width: 0%;
+	height:2px;
+	bottom:0;
+	right:0;
+	background: #000;
+
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.contents .bdR{
+	position: absolute;
+	height:0%;
+	width :2px;
+	right:0;
+	top:0;
+	background: #000;
+
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.contents .bdL{
+	position: absolute;
+	height:0%;
+	width :2px;
+	left:0;
+	bottom:0;
+	background: #000;
+
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.contents:hover .bdT{width: 100%;}
+.contents:hover .bdB{width: 100%;}
+.contents:hover .bdR{height:100%;}
+.contents:hover .bdL{height:100%;}
+
+.contents:nth-child(2n){
+	margin: 10px 0px 10px 15px;
+	height: 160px;
+	width:435px;
+	
+}
+
+.contents a{
+	z-index: 1;
+	display: table;
+	width: 435px;
+	height: 160px;
+	background-color: #FFF;
+	position: absolute;
+}
+
+.contents img{
+	display: table-cell;
+	width: 160px;
+	height: auto;
+}
+
+.contents p{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 275px;
+	height: 100%;
+	background-color: #f5f5f5;
+
+
+	transition: 0.3s;
+}
+
+.image{
+	float:left;
+	height: 350px;
+	width:900px;
+	background-color: #888888
+}
+
+.image img{
+	height: auto;
+	width:900px;
+	background-color: #888888
+}
+
+.image_2{
+	float:left;
+	height: 450px;
+	width:900px;
+	background-color: #888888
+}
+
+.image_2 img{
+	position: absolute;
+	margin: auto 0;
+	height: auto;
+	width:900px;
+	background-color: #888888
+	top:0;
+	bottom: 0;
+}
+
+.title{
+	position: relative;
+	font-weight: bold;
+	line-height:30px;
+	border-bottom: dotted 1px;
+	border-left: solid 10px;
+	margin-top: 20px;
+	width: 890px;
+	height:30px;
+}
+
+.title h1{
+	padding-left: 10px;
+
+}
+
+.gaiyou_all{
+	position: relative;
+	margin: 50px 0px;
+	width: 900px;
+}
+
+.gaiyou{
+	float: left;
+	letter-spacing: 1px;
+	padding:0px 25px 0px 0px;
+	width: 550px;
+}
+
+.gaiyou a{
+	text-decoration: underline;
+}
+
+.huzoku{
+	float: right;
+	padding: 0px 0px 0px 25px;
+	width: 300px;
+	font-size: 15px;
+}
+
+.setumei{
+	letter-spacing: 1px;
+	margin-top: 30px;
+	width: 900px;
+}
+
+.setumei p{
+	padding-bottom: 10px;
+	width: 900px;
+	height: auto;
+}
+
+.setumei h2{
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.setumei a{
+	color:#777;
+	text-decoration: underline;
+}
+
+.setumei_nth{
+	padding: 50px 0px;
+	border-top: dotted 1px;
+}
+
+.naiyou p{
+	float: left;
+	padding-right: 20px;
+	width: 430px;
+}
+
+.naiyou img{
+	float: right;
+	padding-left: 20px;
+	width: 430px;
+}
+
+.clearfix:after{
+	content: "."; 
+	display: block; 
+	height: 0; 
+	font-size:0; 
+	clear: both; 
+	visibility:hidden;
+}
+
+/*.clearfix{display: inline-block;} 
+
+/* Hides from IE Mac \*/
+* html .clearfix {height: 1%;}
+.clearfix{
+	display:block;
+	clear: both;
+}
+/* End Hack */
+
+.video {
+	float: right;
+	margin-top: 0px;
+}
+
+.video iframe{
+	margin: 0px 25px;
+	float:left;
+}
+
+.video_center{
+	margin-right: 55px;
+}
+
+.media{
+	margin-top: 0px;
+	width: 900px;
+}
+
+.media img{
+	margin: 5px 5px;
+	width: 890px;
+	height: auto;
+}
+
+.top_movie{
+	margin-top: 50px;
+	margin-bottom: 60px;
+	position: relative;
+	overflow: hidden;
+}
+
+.top_movie video{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+
+.about{
+	padding: 30px 0px 50px 0px;
+	width: 900px;
+}
+
+.profile_me{
+	width: 600px;
+	float: left;
+}
+
+.profile_me p{
+	display: block;
+	padding: 10px 0px;
+	width: 600px;
+	border-left: 10px;
+}
+
+.profile_image img{
+	border-radius: 50%;
+	float: right;
+	margin: 10px 30px 0px 20px;
+	width: 250px;
+	height: 250px;
+	border-left: 1px;
+}
+
+.skill{
+	float: left;
+	margin-top: 20px;
+	margin-right: 10px;
+	width: 290px;
+}
+
+.skill h3{
+	font-size: 15px;
+}
+
+.skill li{
+	float: left;
+	margin: 3px 0px;
+	padding-left: 5px; 
+	width: 130px;
+}
+
+.skill li:nth-child(2n+1){
+	background-color: #DCDCDC;
+}
+
+.profile_like{
+	float: left;
+	margin: 10px 0px;
+	padding: 0px 15px;  
+	width: 270px;
+	height: 160px;
+}
+
+.profile_like p{ 
+	width: 270px;
+	padding-top:5px; 
+}
+
+.photos{
+	width: 900px;
+}
+
+.photos img{
+	float: left;
+	margin: 10px 5px; 
+	width: 440px;
+	max-height: 293px;
+}
+
+.photos_other img{
+	float: left;
+	margin: 10px 5px; 
+	width: 440px;
+	height: auto;
+}
+

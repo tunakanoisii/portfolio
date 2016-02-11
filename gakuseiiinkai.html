@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Moena's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"  />
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<!-- jQuery library (served from Google) -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+
+	<div id="site">
+
+		<header>
+			<div id="top"><a href="index.html">Moena's Portfolio</a></div>
+			<nav>
+				<ul>
+					<li><a href="index.html#main"><td align="center" valign="middle">Works</td></a></li>
+					<li><a href="about.html"><td align="center" valign="middle">About</td></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main" class="clearfix">
+			<ul class="bxslider">
+				<li class="image"><img src="img/funcl_main.jpg"></li>
+			</ul>
+
+			<script>
+				$(document).ready(function(){
+					$('.bxslider').bxSlider();
+				});
+			</script>
+
+			<div class="title clearfix">
+				<h1>学生委員会</h1>
+			</div>
+
+			<div class="gaiyou_all clearfix">
+				<div class="gaiyou">
+					<p>　学生委員会に所属し、学生支援活動を行っています。</p>
+					<p>　入学式前に新入生歓迎会を開催し、新入生の和を広げる。新入生歓迎冊子を作成し、次年度に入学する新入生へ公式パンフレットとは違う視点から新入生に役立つような情報を伝えるなど、他にも様々な活動を行ってきました。</p>
+				</div>
+
+				<div class="huzoku">
+					<p>グループ活動</p>
+					<p>担当箇所:撮影/編集/記事デザイン</p>
+					<p>使用ツール:Illustrator/Photoshop</p>
+					<p>期間:2013/04~</p>
+				</div>
+			</div>
+
+			<div class="setumei">
+				<div class="setumei_nth  clearfix">
+
+					<h2>新入生歓迎冊子の制作</h2>
+					<p>　特に新入生歓迎冊子では、メンバーそれぞれがページ担当をし、連携しながら制作しました。</p>
+					<p>　私は主に冊子に使用するほぼ全ての写真の撮影・加工、複数ページの制作を行いました。</p>
+					<p>　2年目は、表紙に使用する写真の撮影も行いました。新入生が未来へ新しい1歩を踏み出すようなイメージで撮影しました。</p>
+					
+					<div class="photos_other">
+						<img src="img/funcl_2.jpg">
+						<img src="img/funcl_1.jpg">
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer>
+			<p>Copyright © 2015 Moena Shimawaki All Rights Reserved.</p>
+		</footer>
+	</div>
+
+</body>
+
+</html>

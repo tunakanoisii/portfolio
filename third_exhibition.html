@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Moena's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<!-- jQuery library (served from Google) -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+
+	<div id="site">
+
+		<header>
+			<div id="top"><a href="index.html">Moena's Portfolio</a></div>
+			<nav>
+				<ul>
+					<li><a href="index.html#main"><td align="center" valign="middle">Works</td></a></li>
+					<li><a href="about.html"><td align="center" valign="middle">About</td></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main" class="clearfix">
+			<ul class="bxslider">
+				<li class="image"><img src="img/third_exhibition_top.png"></li>
+			</ul>
+
+			<script>
+				$(document).ready(function(){
+					$('.bxslider').bxSlider();
+				});
+			</script>
+
+			<div class="title">
+				<h1>縦長にコンテンツを並べたwebサイト</h1></div>
+
+				<div class="gaiyou_all clearfix">
+					<div class="gaiyou">
+						<p>　3年デザインコースの展示会のwebページを制作をしました。</p>
+						<p>　閲覧者にひと目で展示会の概要が伝わるようにするため、ファーストビューのデザインに着目しました。</p>
+
+						<br>
+
+						<p>改善案HP(<a href="http://funifd.com/exhibition/ucd2015/" target="_blank">http://funifd.com/exhibition/ucd2015/</a>)</p>
+					</div>
+					<div class="huzoku">
+					<p>グループ活動</p>
+					<p>担当箇所:コーディング/UX/サイトデザイン</p>
+						<p>使用ツール:Illustrator/Sublime text/GitHub</p>
+						<p>使用言語:HTML/CSS/JavaScript</p>
+						<p>製作期間:2015/12~2016/01</p>
+					</div>
+				</div>
+
+				<div class="setumei">
+					<div class="setumei_nth  clearfix">
+						<h2>開発管理ツールとしてGitHubを使用</h2>
+						<p>　初の複数人でのweb開発だったため、GitHubを導入しました。</p>
+						<p>　それぞれのメンバーがどんな仕事を持っているのかを管理し、わからない点があった時は持っている技術て助け合いをしながらの作業でした。</p>
+
+						<br>
+
+						<div class="media" class="clearfix"><img src="img/third_exhibition_1.png"></div>
+					</div>
+
+					<div class="setumei_nth  clearfix">
+						<h2>ファーストビューに着目したプレサイトのデザイン</h2>
+						<p>　スマートフォンからサイトを開いた際、画面内にどんな情報が入っているべきなのかを検討し、デザインしました。</p>
+						<p>　ここでは、「展示会の名前」「開催日時」「開催場所」が画面に収まっているべきだと考え、配置しました。</p>
+
+						<div class="media"><img src="img/third_exhibition_2.png"></div>
+					</div>
+
+					<div class="setumei_nth  clearfix">
+						<div class="naiyou clearfix">
+							<h2>縦にコンテンツを並べた本サイトのデザイン</h2>
+							<img src="img/third_exhibition_3.png">
+							<p>　全コンテンツを縦に並べ、雪道をバスに見立てた模型が走っていくようなデザインにしました。</p>
+							<p>　スクロールに合わせてコンテンツが表示されるようにし、提案物はモーダルウィンドウで表しました。</p>
+							<p>　モーダルウィンドウの実装およびデザインは、私の役割の一つでした。</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<footer>
+				<p>Copyright © 2015 Moena Shimawaki All Rights Reserved.</p>
+			</footer>
+		</div>
+
+	</body>
+
+	</html>
