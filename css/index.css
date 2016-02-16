@@ -137,6 +137,7 @@ footer p{
 }
 
 .contents{
+	overflow: hidden;
 	float: left;
 	position: relative;
 	margin: 10px 15px 10px 0px;
@@ -222,8 +223,7 @@ footer p{
 }
 
 .contents img{
-	width: auto;
-	height: 160px;
+	width: 100%;
 }
 
 .contents p{
