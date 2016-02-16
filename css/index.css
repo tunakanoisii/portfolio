@@ -205,14 +205,14 @@ footer p{
 .contents:hover .bdB{width: 100%;}
 .contents:hover .bdR{height:100%;}
 .contents:hover .bdL{height:100%;}
+*/
 
 .contents:nth-child(2n){
 	margin: 10px 0px 10px 15px;
 	height: 160px;
 	width:435px;
-	
 }
-*/
+
 
 .contents a{
 	z-index: 1;
