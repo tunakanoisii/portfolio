@@ -150,9 +150,9 @@ footer p{
 .contents{
 	float: left;
 	position: relative;
-	margin: 10px 10px;
-	height: 400px;
-	width: 280px;
+	margin: 10px 15px 10px 0px;
+	height: 160px;
+	width: 435px;
 	background-color: #FFF;
 }
 
@@ -215,28 +215,36 @@ footer p{
 .contents:hover .bdR{height:100%;}
 .contents:hover .bdL{height:100%;}
 
+.contents:nth-child(2n){
+	margin: 10px 0px 10px 15px;
+	height: 160px;
+	width:435px;
+	
+}
+
 .contents a{
 	z-index: 1;
-	display: block;
-	width: 280px;
-	height: 400px;
+	display: table;
+	width: 435px;
+	height: 160px;
 	background-color: #FFF;
 	position: absolute;
 }
 
 .contents img{
 	display: table-cell;
-	width: 280px;
-	height: 200px;
+	width: 160px;
+	height: auto;
 }
 
 .contents p{
-	display: block;
+	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
 	width: 275px;
-	height: 200px;
+	height: 100%;
 	background-color: #f5f5f5;
+
 
 	transition: 0.3s;
 }
