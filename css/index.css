@@ -371,8 +371,9 @@ footer p{
 
 .naiyou img{
 	float: right;
-	padding-left: 20px;
-	width: 430px;
+	margin-left: 20px;
+	width: 428px;
+	border: solid 1px #C0C0C0;
 }
 
 .clearfix:after{
@@ -520,6 +521,6 @@ footer p{
 }
 
 .imgs img{
-	padding-bottom: 15px;
+	margin-bottom: 15px;
 }
 
